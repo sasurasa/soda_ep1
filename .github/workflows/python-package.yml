@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/p/SURPY v.2.0.0
+      url: https://pypi.org/p/SURPY 2.0.0
     permissions:
       id-token: write
     steps:
