@@ -13,9 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/p/SURPY v.2.0.0
+      url: https://pypi.org/p/soda_ep1
     permissions:
       id-token: write
+
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
@@ -28,6 +29,6 @@ jobs:
           pip install setuptools wheel
       - name: Build package
         run: |
-          python setup.py sdist bdist_wheel  # Could also be python -m build
+          python setup.py sdist bdist_wheel
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
